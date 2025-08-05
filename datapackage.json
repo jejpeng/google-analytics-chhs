@@ -1,0 +1,196 @@
+{
+  "accrual_periodicity": "point in time",
+  "additional_limitations": "",
+  "citation": "",
+  "contact_email": "opendata@chhs.ca.gov",
+  "data_collection_tool": "",
+  "data_license": "Terms of Use",
+  "de_identification_method": "n/a",
+  "description": "Universal Analytics data from Google Analytics for the CalHHS Open Data Portal. This data was captured using the depreciated Universal Analytics tool and is no longer available on the web via Google UI or Google APIs. It has been loaded here so that users and the metrics dashboard can access the data.",
+  "geo_coverage": "",
+  "geographic_granularity": "other",
+  "keywords": [
+    "calhhs",
+    "googleanalytics",
+    "metrics",
+    "opendata"
+  ],
+  "limitations": "Limitations",
+  "name": "chhs-ckan-google-analytics",
+  "program_web_page": "https://cdii.ca.gov/",
+  "related_resources": "",
+  "resources": [
+    {
+      "description": "Google Analytics (Universal Analytics) data for user count by date.",
+      "format": "CSV",
+      "hash": "ce9044f871403e754e0e9a33a41bccdd",
+      "name": "ga-date-and-users",
+      "path": "ga-date-and-users.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Date of website interaction",
+            "name": "Date",
+            "title": "Date",
+            "type": "datetime"
+          },
+          {
+            "description": "Count of users on selected date",
+            "name": "Users",
+            "title": "Users",
+            "type": "number"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/df798d09-ef10-4608-b64f-1fedb9fffad9/resource/d7f7a21d-bc20-4206-8f1b-438b993769c7/download/ga_dateusers.csv",
+          "title": "GA - Date and Users"
+        }
+      ],
+      "title": "GA - Date and Users"
+    },
+    {
+      "description": "Google Analytics (Universal Analytics) data for events and pages by date.",
+      "format": "CSV",
+      "hash": "efd9d0de70eb557ad0ebaec7c1d33487",
+      "name": "ga-date-pages-and-events",
+      "path": "ga-date-pages-and-events.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Event Action",
+            "type": "string"
+          },
+          {
+            "name": "Event Category",
+            "type": "string"
+          },
+          {
+            "name": "Date",
+            "type": "datetime"
+          },
+          {
+            "name": "Total Events",
+            "type": "number"
+          },
+          {
+            "name": "Page Path 1",
+            "type": "string"
+          },
+          {
+            "name": "Page Path 2",
+            "type": "string"
+          },
+          {
+            "name": "Page Path 3",
+            "type": "string"
+          },
+          {
+            "name": "Page Path 4",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/df798d09-ef10-4608-b64f-1fedb9fffad9/resource/b35ac10b-b01a-4cc0-afe7-5a3afbcba23a/download/ga_datepagesevents.csv",
+          "title": "GA - Date, Pages, and Events"
+        }
+      ],
+      "title": "GA - Date, Pages, and Events"
+    },
+    {
+      "description": "Google Analytics (Universal Analytics) data for user count by location.",
+      "format": "CSV",
+      "hash": "1453e2c8cd3f57e1ae3823d46f7b3025",
+      "name": "ga-users-by-location",
+      "path": "ga-users-by-location.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "City",
+            "type": "string"
+          },
+          {
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "name": "Latitude",
+            "type": "string"
+          },
+          {
+            "name": "Longitude",
+            "type": "string"
+          },
+          {
+            "name": "Users",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/df798d09-ef10-4608-b64f-1fedb9fffad9/resource/07099fef-06d4-462b-83bd-6eda00b424be/download/ga_userscitycountrylatlong.csv",
+          "title": "GA - Users by Location"
+        }
+      ],
+      "title": "GA - Users by Location"
+    },
+    {
+      "description": "Google Analytics (Universal Analytics) data for user pages and page views count by date.",
+      "format": "CSV",
+      "hash": "4e5a29b229ba26800f39772b77e16dd6",
+      "name": "ga-dates-pages-page-views",
+      "path": "ga-dates-pages-page-views.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Event Action",
+            "type": "string"
+          },
+          {
+            "name": "Page Title",
+            "type": "string"
+          },
+          {
+            "name": "Date",
+            "type": "datetime"
+          },
+          {
+            "name": "Pageviews",
+            "type": "number"
+          },
+          {
+            "name": "Page Path 1",
+            "type": "string"
+          },
+          {
+            "name": "Page Path 2",
+            "type": "string"
+          },
+          {
+            "name": "Page Path 3",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/df798d09-ef10-4608-b64f-1fedb9fffad9/resource/df6da374-7e76-461a-bf43-dbb04c196b10/download/ga_datepagespageviews.csv",
+          "title": "GA - Dates, Pages, Page Views"
+        }
+      ],
+      "title": "GA - Dates, Pages, Page Views"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "Center for Data Insights and Innovation"
+    }
+  ],
+  "temporal_coverage": "Approximately July 2020 - July 2023",
+  "title": "CalHHS Open Data Portal - Google Analytics Data"
+}
